@@ -1,0 +1,2807 @@
+body {
+/*  background: white url(/mathscinet/images/backGrad.png) repeat-x left top; */
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+br, .br {
+  display: block;
+}
+
+.nbp {
+  white-space : nowrap;
+}
+
+.hindent {
+  padding-left: 10px ;
+  text-indent: -10px ;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  line-height: 1.4em;
+}
+
+.ReviewedBy {  
+  display : block;
+  padding: 0.8em;
+  text-align: center;
+}
+
+.ForCollectionSee {  
+  display : block;
+  padding: 0.8em 0em 0.8em 0em;
+}
+
+table.linkedJournals {
+  clear: both;
+}
+
+#selectAlternative {
+  margin-bottom: .15em;
+}
+
+pre {
+  font-family: 'Andale Mono', 'Bitstream Vera Sans Mono', monospace;
+}
+
+img { 
+  border: 0; 
+}
+
+input {
+  background: white;
+  color: black;
+}
+
+input, select {
+  font-weight: bold;
+  font-size: .85em;
+  margin: 2px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  clear: both;
+}
+
+h2.citationsTitle {
+  text-align: center;
+}
+
+h3, .erdosNumber {
+  font-size: 1.05em;
+  font-weight: bold;
+  color: #f17400;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  clear: left;
+}
+
+a { 
+  color: blue;
+  text-decoration: none;
+  word-wrap: break-word;
+}
+
+.headline a strong {
+  color: #00009b;
+  font-weight: bold; 
+  font-size: 1.1em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#logocontainer {
+  clear: both;
+  color: gray;
+  font-size: .7em;
+  margin: 0 10px;
+  padding-top: 10px;
+/*  margin-left: -367px; */
+}
+
+#issn {
+    display:block;
+    float:right;
+    color: gray;
+    font-size: .8em;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+a#logo img {
+  max-width: 100%;
+  /*width: 377px;*/
+  /*height: 55px;*/
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/mathscinet/images/logo.png?version=1',sizingMethod='scale');
+
+  margin-top: -20px;  
+  margin-left: -45px;
+
+}
+
+.navbar {
+  float: right;
+}
+
+.extendHeadlines {
+  float: left; 
+  text-align: right; 
+  width: 30%;
+}
+
+.doc {
+  margin-top: 10px; 
+  padding-top: 0px;
+  padding-bottom: 2em;
+  margin-bottom: 10px;
+  clear: both;
+}
+
+.doc .headline {
+  padding-top: 0;
+}
+
+.first {
+  margin-top: 1em !important;
+}
+
+.headline, .issue {
+  padding-top: 0;
+  padding-bottom: 15px; 
+  clear: left;
+  color: black;
+}
+
+.headlineNumber {
+  color: #404040;
+}
+
+#content a:visited, #content a:visited strong {
+  color: #673398;
+  /* text-decoration: underline solid; */
+}
+
+/*
+a {
+  text-decoration: underline solid;
+}
+
+a:link {
+    font-weight: 700;
+}
+*/
+                     
+
+.issue {
+  float: left;
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+
+.headlineText {
+  float: left;
+  width: 94%;
+  width: calc(100% - 24px);
+  /*line-height: 21px;*/
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.checkbox {
+  float: left;
+  margin-right: 0.3em;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  border: 0; 
+  padding: 0;
+  margin: 0; 
+}
+
+.hlCheckBox {
+  border: 0px none !important;
+}
+
+.headline a {
+  color: blue;
+}
+
+.headlineMenu a.firstItem, .batchDownload a.firstItem {
+  border-left: 0px solid #c0c0c0;
+  padding-left: 0;
+}
+
+.headlineMenu, .batchDownload {
+  font-size: .8em;
+  margin: 0;
+}
+.headlineMenu a, .batchDownload a, .helpSample {
+  padding-right: 3px;
+  color: #ab3625;
+}
+
+.headlineMenu a, .batchDownload a {
+  padding-left: 6px;
+  border-left: 1px solid #c0c0c0;
+}
+
+.disabled {
+  color: #b0b0b0;
+}
+
+.headlineMenu span.disabled, .batchDownload span.disabled {
+  padding-left: 7px;
+  border-left: 1px solid #c0c0c0;
+}
+
+.batchDownload {
+  margin-bottom: 6px;
+}
+
+#options {
+  position: absolute;
+  width: 500px;
+  height: 700px;
+  top: 20px;
+  padding: 0;
+  right: 8%;
+  margin-right: 150px;
+  z-index: 100;
+  visibility: hidden;
+}
+
+form {
+  border: 0px solid white;
+}
+
+.batchDownload input {
+  border: 0;
+}
+.batchDownload input + input {
+  border-left: 1px solid #808080;
+}
+
+.citationCounts, .authorsHelp, .authorMenu, .mentions {
+  background-color: #fafafa;
+  width: 15em;
+  float: right;
+  border: 1px solid #a0a0a0;
+  font-size: .85em;
+  color: #808080;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.authorsHelp {
+  width: 25em;
+  margin-top: 1.5em;
+}
+
+.authorsHelp table {
+  padding: 5px;
+}
+
+.authorsHelp table td {
+  padding: 4px;
+}
+
+.citationCounts h3, .authorsHelp h3, .mentions h3 {
+  width: 100%;
+  text-decoration: none;
+  color: #505050;
+  margin: 0;
+  text-align: center;
+  background-color: #e0e0e0;
+}
+
+.citationCounts p, .authorsHelp p, .mentions p {
+  margin: 4px;
+}
+
+.authorsHelp p {
+  text-indent: -2em;
+}
+
+ul.citationInfo {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+}
+
+ul.citationInfo li {
+  display: inline;
+  border-left: 1px solid #808080;
+  padding: 0 5px 0 5px;
+}
+
+ul.citationInfo li.firstItem {
+  border-left: 0;
+}
+
+.searchHighlight {
+  background-color: #FFFF99; 
+  color: black;
+}
+
+.searchEqnHighlight.displayBlock {
+  display: block;
+}
+
+.searchEqnHighlight {
+  background: #FFFF99; 
+  color: black;
+}
+
+.jdoc {
+  padding-left: 30px;
+}
+
+.jdoc .headlineMenu {
+  margin-top: 10px;
+}
+
+.CurrentPage {
+  font-weight: bold;
+}
+
+.clipboard, .clipboardHidden {
+  display: inline;
+  border-right: 1px solid #707070;
+  padding: 3px 3px 3px 5px;
+}
+
+.clipboardHidden {
+  display: none;
+}
+
+span.indexing {
+  color: gray;
+  font-size: .8em;
+}
+
+.sfx {
+  float: right;
+}
+
+.factsAndFigures {
+  position: absolute;
+  left: 30px;
+  bottom: 25px;
+  padding: 0;
+  color: #505050;
+  font-size: .75em;
+  font-style: italic;
+  z-index: 2;
+}
+
+.factsAndFigures span {
+  font-weight: bold;
+}
+
+.yearRange {
+  color: #808080;
+}
+
+.helptext {
+  text-align: left;
+}
+
+.helptopic {
+  font-weight: bold;
+  font-size: 1.15em;
+}
+
+.helpsubtopic {
+  font-weight: bold;
+}
+
+hr {
+  border: 0;
+  color: #a0a0a0;
+  background-color: #a0a0a0;
+  height: 1px;
+}
+
+.matches {
+  float: left;
+}
+
+table#jour_line {
+  clear: left;
+}
+
+/****************/
+/* Folder stuff */
+/****************/
+#citationsBlock, #authorCitationsBlock, #publicationsBlock, #collaborationDistBlock, #topMCQ, #topJournals, #topBooks, .contentFolder {
+  width: 100%;
+}
+
+#topMCQ table {
+  width: 100%;
+}
+
+.folder, .topFolder, .bottomFolder {
+  position: absolute;
+  top: 170px;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  width: expression((document.body.clientWidth < 880) ? "774px" : "100%");
+  padding: 0;
+  margin: 0;
+}
+
+.folder input {
+  background-color: transparent;
+}
+
+.topFolder {
+  z-index: 60;
+  display: block;
+}
+
+.bottomFolder {
+  z-index: 50;
+  display: none;
+}
+
+.folderWrap1 {
+  margin-top: -50px;
+}
+
+.folderWrap1, .folderWrap2, .folderWrap3, .folderWrap4 {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+html>body .folderWrap1, html>body .folderWrap2, html>body .folderWrap3, html>body .folderWrap4 {
+  width: 100%;
+}
+
+.folderWrap1 {
+  background: #ffe8d2 url(/mathscinet/images/tab_gradient.png) left top repeat-x;
+  float: left;
+}
+
+.folderWrap2 {
+  background: url(/mathscinet/images/tab_left_shadow.png) left top repeat-y;
+}
+
+.folderWrap4 {
+  background: url(/mathscinet/images/tab_right_shadow.png) right top repeat-y;
+}
+
+.folderFooter {
+  clear: both;
+  position: relative;
+  background: transparent url(/mathscinet/images/tab_bottom_border.png) left bottom repeat-x;
+  overflow: auto;
+  width: 100%;
+  z-index: 1;
+}
+
+.folderFooter .left {
+  float: left;
+  background: transparent url(/mathscinet/images/tab_bottom_left_corner.png) left bottom no-repeat;
+  width: 42px;
+  height: 48px;
+}
+
+.folderFooter .right {
+  float: right;
+  background: transparent url(/mathscinet/images/tab_bottom_right_corner.png) right bottom no-repeat;
+  width: 43px;
+  height: 48px;
+}
+
+.folderWrap3 img {
+  display: block;
+}
+
+.folderContent {
+  min-height: 15em;
+  /*min-width: 40em;*/
+  padding: 0.4em 2.5em 1.6em 2.5em;
+  color: black;
+  overflow: auto;
+  /*width: 88%;*/
+}
+
+/*************/
+/* Tab Stuff */
+/*************/
+
+.tabContainer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 122px;
+  z-index: 70;
+  height: 58px;
+  background: white url(/mathscinet/images/topRight.png) right top no-repeat;
+  width: expression((document.body.clientWidth < 880) ? "774px" : "100%");
+  padding: 0 14px;
+  margin: 0;
+  font-size: .90em; 
+  list-style-type: none;
+}
+
+.tabContainer li:first-child {
+  margin-left: -14px;
+}
+
+/* lower tab */
+.lowerTab, .lowerTabEdge {
+  background: transparent url(/mathscinet/images/lowerTabRight.png) right top no-repeat;
+  height: 42px;
+  float: left;
+  z-index: 40;
+  margin: 0;
+  padding: 0 15px 0 0;
+}
+
+/* this will be ignored by IE */
+html>body .lowerTab, html>body .lowerTabEdge {
+  width: auto;
+}
+
+.lowerTab div, .lowerTabEdge div {
+  background: transparent url(/mathscinet/images/lowerTabLeft.png) left top no-repeat;
+  height: 42px;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+.lowerTabEdge div {
+  background: transparent url(/mathscinet/images/lowerTabLeftEdge.png) left top no-repeat;
+}
+
+.lowerTab div div, .lowerTabEdge div div {
+  padding: 16px 7px 0 24px;
+  text-align: center;
+}
+
+.lowerTab a, .lowerTabEdge a, .helpTab {
+  text-decoration: none;
+  color: #f17400 !important;
+}
+
+.lowerTab a:hover, .lowerTabEdge a:hover {
+  color: blue;
+}
+
+/* upper tab */
+.upperTab, .upperTabEdge {
+  background: transparent url(/mathscinet/images/upperTabRight.png) right top no-repeat;
+  height: 42px;
+  float: left;
+  z-index: 40;
+  margin: 0;
+  padding: 0 15px 0 0;
+}
+
+/* this will be ignored by IE */
+.upperTab, .upperTabEdge, [dummy=dummy] {
+  width: auto;
+}
+
+.upperTab div, .upperTabEdge div {
+  background: transparent url(/mathscinet/images/upperTabLeft.png) left top no-repeat;
+  height: 42px;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+.upperTabEdge div {
+  background: transparent url(/mathscinet/images/upperTabLeftEdge.png) left top no-repeat;
+}
+
+.upperTab div div, .upperTabEdge div div {
+  padding: 16px 7px 0 24px;
+  text-align: center;
+}
+
+.upperTab a, .upperTabEdge a {
+  color: blue !important;
+  font-weight: bold;
+}
+
+.upperTab a:hover, .upperTabEdge a:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+/****************************/
+/* Stuff within tab folders */
+/****************************/
+
+.folder div, .topFolder div, .bottomFolder div {
+  /* float: left; */
+  /* exo firefox 2 display gets messed up */
+}
+
+#publications {
+  /*display: inline-block;*/
+  overflow: auto;
+}
+
+.submitBox {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.searchTerm {
+  clear: left;
+  width: 100%;
+}
+
+.searchTerm select {
+  /*float: left;*/
+  margin: 3px;
+}
+
+select.publicationsFields {
+  width: 15em;
+}
+
+.searchTerm input, .searchTerm div {
+  /*float: left;*/
+  margin: 3px 1px 3px 1px; 
+}
+
+.searchTerm input[type='text'], .searchTerm div {
+  width: 300px;
+}
+
+.searchTerm select[name='MRprimary'] {
+  width: 300px;
+}
+
+.orEnter {
+  display: block;
+  margin: 15px 0 5px 0 !important;
+}
+
+/*input[type='submit'], input[type='reset'], input[type='text'] {
+  background: white;
+}
+*/
+.searchOptions {
+  float: left;
+  margin: 20px 30px 0px 0;
+  min-height: 100px;
+  padding: 0;
+  /*white-space : nowrap;*/
+}
+
+.searchOptions h3 {
+  margin-top: 0;
+}
+
+.searchOptions label {
+  display: block;
+  margin: 5px 0;
+}
+
+.searchOptions label.inline {
+  display: inline-block;
+}
+
+.searchOptions input {
+  margin: 0 5px 0 0;
+}
+
+#links { 
+  display: inline;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+#links a:hover {
+  color: #808080;
+  text-decoration: none;
+}
+
+#links h3 {
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  margin: 0;
+  text-align: center;
+  background-color: #feb56e;
+}
+  
+#links a span {
+  display:none;
+}
+
+#links a:hover span { 
+  display: block;
+  position: absolute; 
+  left: 15px; 
+  z-index: 20; 
+  color: black; 
+  border: 1px solid #707070;
+  background: white url(/mathscinet/images/shadow.jpg) -10px -600px no-repeat;
+  padding: 8px;
+  -moz-border-radius: 10px;
+  width: 350px;
+  text-decoration: none;
+}
+
+/****************/
+/* footer stuff */
+/****************/
+
+.copyright, .amsAddress {
+  font-size: .70em;
+  color: #505050;
+  padding: 0;
+  margin: 1em 0 0 0;
+  height: 80px;
+}
+.copyright {
+    clear:both;
+}
+
+.amsAddress img {
+  float: left;
+  vertical-align: middle;
+}
+
+.amsAddress div {
+  float: left;
+}
+
+.amsAddress {
+  float: left;
+  margin-left: 6px;
+}
+
+html>body .amsAddress {
+  margin-left: 11px;
+}
+
+.copyright {
+  text-align: right;
+  float: right !important;
+  margin-right: 8px;
+}
+
+html>body .copyright {
+  margin-right: 15px;
+}
+
+p.directions {
+  color: #828282;
+  clear: both;
+  padding: 0;
+  margin: 0;
+}
+
+.directions {
+  color: #828282;
+  clear: both;
+}
+
+/****************************/
+/* Results page decorations */
+/****************************/
+
+#MatchForm {
+  position: absolute;
+  top: 5em;
+  right: 5.5em;
+}
+
+#MatchForm input {
+  background: #f5f5f5;
+}
+
+.pageTitle {
+  color: black;
+  font-size: .90em;
+  font-style: italic;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+.doc .title {
+  font-weight: bold;
+}
+
+#titleSeparator, #footerSeparator {
+  width: 100%;
+  height: 1.3em;
+  overflow: hidden;
+  background: white url(/mathscinet/images/backGrad.png) repeat-x left -8px;
+  margin: 15px 0 0 0;
+  position: relative;
+  border-top: 1px solid #808080;
+  clear: both;
+}
+
+html>body #titleSeparator, html>body #footerSeparator {
+  margin-bottom: 5px;
+}
+
+/*************/
+/* main menu */
+/*************/
+ul#menu {
+  display: inline; /* IE needs this */
+  font-weight: normal;
+  font-size: .8em;
+  list-style: none;
+  margin: 0px;
+  padding: 0 15px 0 10px;
+  /*margin-left: -5px;*/
+/*  background: transparent url(/mathscinet/images/dropDownLeft.png) top left no-repeat; */
+  height: 33px;
+}
+
+html>body ul#menu {
+  display: block;
+  padding-top: 4px;
+}
+
+ul#menu li {
+  display: inline;
+  border-left: 1px solid #707070;
+  padding: 3px 3px 3px 5px;
+}
+
+ul#menu li a {
+  padding: 0;
+  margin: 0;
+}
+
+ul#menu li.first {
+  border-left: 0;
+}
+
+.instname { 
+  color: #F17400;  /* orange */
+  float: right;
+  font-size: 13px;
+  text-align: right;
+}
+
+#menuWrap {
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*right: 0;*/
+/*  background: transparent url(/mathscinet/images/dropDownRight.png) top right no-repeat; */
+  height: 25px;
+  float: right;
+  padding: 0;
+  margin: 0;
+  height: 25px;
+  float: right;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #cccccc;
+  margin-bottom: 5px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  background-color: #f5f5f5;
+}
+
+html>body #menuWrap {
+  padding-top: 0px;
+}
+
+/*************/
+/* Help menu */
+/*************/
+ul.help {
+  position: absolute;
+  right: 20px;
+  bottom: 25px; 
+  font-weight: normal;
+  font-size: .9em;
+  margin: 0;
+  padding: 0;
+  z-index: 3;
+  list-style: none;
+}
+
+ul.help li {
+  display: inline;
+  border-left: 1px solid #707070;
+  padding: 3px 8px 3px 8px;
+}
+
+ul.help li.first {
+  border-left: 0;
+}
+
+/**************/
+/* Tree lists */
+/**************/
+#everything {
+  text-align: left;
+  position: relative;
+  top: 0;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1100px;
+  /* this can be put back when the announcement is gone */
+  /* min-width: 47em; */
+/*  width: expression((document.body.clientWidth < 890) ? "783px" : "88%");
+  min-width: 53.5em;*/
+}
+
+#content { 
+  /*position: absolute;*/
+  /*top: 96px;*/
+  /*top: 110px;*/
+  padding: 0 15px;
+  /*left: 0;*/
+  /*right: 0;*/
+}
+
+#content .anylinkcss {
+  margin: 0 0 0 1.3em !important;
+  margin: 8em 0 0 3.3em;
+  background: white url(/mathscinet/images/upperLeft.png) no-repeat -20px top;
+}
+
+.anylinkcss h3 {
+  width: 100%;
+  font-size: 1.05em;
+  text-decoration: none;
+  margin: 0;
+  text-align: center;
+  color: black;
+  background-color: #ffe8d2;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+}
+
+.refnote {
+  font-size: .8em;
+  margin: 20px 15% 20px 15%;
+  color: #505050;
+}  
+
+.req {
+  color: #ff0000;
+}
+
+.error, .instructions, p.error {
+  padding: 20px 0 10px;
+  clear: both;
+  color: #1eab00;
+}
+
+.instructions {
+  color: green;
+}
+
+.indent1, .indent2, indent3 {
+  margin-left: 0%;
+  position: relative;
+}
+
+.indent2 {
+  margin-left: 8%;
+  text-indent: -3%;
+}
+
+.indent3 {
+  margin-left: 13%;
+  text-indent: -3%;
+}
+
+.indent4 {
+  margin-left: 18%;
+  text-indent: -3%;
+}
+
+.indent5 {
+  margin-left: 23%;
+  text-indent: -3%;
+}
+
+/*
+ * Collaboration Distance
+ */
+
+table.cgd {
+  border-collapse: collapse;
+  margin: 5px 0 5px 0;
+  clear: left;
+}
+
+table.cgd td {
+  padding: 5px 10px 5px 10px;
+  border-left: 1px solid #a0a0a0;
+  border-top: 1px solid #a0a0a0;
+}
+
+.cgd1 {
+  border-left: 0 !important;
+}
+
+/*
+ * Citations
+ */
+
+table.citations {
+  clear: both;
+  border-collapse: collapse;
+  border: 1px solid #808080;
+  margin-top: 20px;
+  width: 99%;
+}
+
+table.citations td, table.citations th {
+  background-color: #fcfcfc;
+  border-left: 1px solid #808080;
+  padding: 5px;
+}
+
+.numbers {
+  text-align: right;
+}
+
+table.citations td {
+  border-top: 1px solid #b0b0b0;
+  background-color: #fcfcfc;
+}
+
+.percent {
+  font-family: monospace;
+  color: #404040;
+  font-size: .75em;
+}
+
+table.citations th {
+  background: white url(/mathscinet/images/backGrad.png) repeat-x left -8px;
+}
+
+table.citations td.citationCount, table.citations th.citationCount,
+table.citations td.citationYear, table.citations th.citationYear {
+  border-left: 0;
+  text-align: center;
+}
+
+table.citations caption {
+  border: 1px solid #808080;
+  text-align: center;
+  margin: 10px 0 0 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.graph {
+  margin-top: 2em;
+}
+
+.graph img {
+  float: left;
+}
+
+.graph p {
+  display: block;
+  float: left;
+}
+
+.operator {
+  font-size: 1.5em;
+  color: black;
+  font-weight: bold;
+  margin-left: 2em;
+}
+
+.footnote {
+  color: #808080;
+  font-size: .9em;
+}
+
+.important {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.authorName {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.lessImportant {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+table.linkedJournals {
+  clear: both;
+}
+
+td.book {
+  background: white url(/mathscinet/images/book.png) center right no-repeat;
+  padding-right: 25px !important;
+}
+
+.newLink {
+  color: green !important;
+  color: red !important;
+}
+
+.topTenLists a {
+  display: block;
+  width: 102px;
+  height: 23px;
+  background: url(/mathscinet/images/top10lists.png) no-repeat;
+  position: absolute;
+  bottom: 170px; 
+  right: 55px;
+}
+   
+.topTenLists img {
+  visibility: hidden;
+}
+   
+.topTenLists a:hover {
+  background: url(/mathscinet/images/top10lists-hover.png) no-repeat;
+}
+
+/* special notification */
+
+#notification {
+  font-family: "Trebuchet MS", "Bitstream Vera Sans", "Lucida Grande", "Nimbus Sans L", Verdana, Arial, Helvetica, sans-serif;
+  right: 6.5%;
+  font-weight: bold;
+  width: 60%;
+  z-index: 100;
+  padding: 12px;
+  border: 2px solid #c0c0c0;
+  font-size: 1em;
+  background: transparent;
+}
+
+#announcement {
+  float: right;
+  /*display: inline-block;*/
+  margin: 40px 0;
+  /*font-family: "Trebuchet MS", "Bitstream Vera Sans", "Lucida Grande", "Nimbus Sans L", Verdana, Arial, Helvetica, sans-serif;*/
+  /*position: absolute;*/
+  /*right: 5.0%;*/
+  /*top: 2.5em;*/
+  /*width: 172px;*/
+  /*z-index: 100;*/
+  /*padding: 12px;*/
+  /*font-size: .8em;*/
+  /*color: #505050;*/
+  /*background: transparent;*/
+}
+
+#banner1, #banner2, #banner3 {
+  /*display: inline-block !important;*/
+  display: none;
+} 
+
+/* Librarians */
+#news {
+  position: relative;
+  width: 100%;
+}
+
+#news dt {
+  font-weight: bold;
+}
+
+#news h2 {
+  font-weight: normal;
+  text-align: left;
+}
+
+#resources {
+  float: right;
+  width: 15em;
+}
+
+#resources * {
+  margin: 0;
+  padding: 0;
+  margin-left: -1px;
+  border-left: 1px solid #e0e0e0;
+}
+
+#resources ul {
+  list-style-type: none;
+}
+
+#resources a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: #606060;
+}
+
+#resources a:hover {
+  background-color: #e0e0e0;
+  color: black !important;
+}
+
+#resources h3 {
+  display: block;
+  background: white url(/mathscinet/images/backGrad.png) repeat-x left -8px;
+  padding: 5px;
+}
+
+.column {
+  float: left;
+  width: 47%;
+  padding-right: 3%;
+}
+
+.column h3, .column ul {
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
+
+.column ul > li {
+  color: #000000;
+  list-style-type: disc;
+  margin-top: 0.1em;
+  margin-bottom: 0.5em;
+}
+
+#boxes {
+  margin: 0 -2%;
+}
+
+.box {
+  display: inline-block;
+  margin: 2%;
+  width: 45.5%  ;
+  vertical-align: top;
+}
+
+/*.box:nth-child(odd) {
+  margin: 0 0 5% 2.5%;
+}*/
+
+.box h2 {
+  border-left: 1px solid #a0a0a0;
+  border-right: 1px solid #a0a0a0;
+  border-top: 1px solid #a0a0a0;
+  line-height: 26px;
+  padding: 10px 0;
+}
+
+/* author page */
+.tagCloud {
+  border: 1px solid #a0a0a0;
+  padding: 15px;
+  background: white url(/mathscinet/images/backGrad.png) repeat-x left -8px;
+}
+
+.tagCloud h2 {
+  text-align: left;
+  margin-bottom: 1em;
+  color: #f17400;
+}
+
+.tagCloud ul {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6em;
+}
+
+.tagCloud ul li {
+  display: inline;
+  margin: 0 1em 0 0;
+  text-align: right;
+  /*white-space : nowrap;  */
+}
+
+.tagCloud ul li.hide {
+    display: none;
+}
+
+/* .tagCloud ul li a { */
+/*   outline-width: 0px; */
+/* } */
+
+.tagCloud address {
+  float: left;
+  padding: 1em 1em 0 0;
+  text-align: left;
+}
+
+.tagCloud a.seeAll {
+  float: right;
+}
+
+.tagCloudMenu {
+  border: 1px solid #a0a0a0;
+  padding: 25px;
+  background: white url(/mathscinet/images/backGrad.png) repeat-x left -8px;
+}
+
+.tagCloudMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tagCloudMenu li {
+  /*border-bottom: 1px solid #a0a0a0;*/
+}
+
+.tagCloudMenu li a {
+  display: block;
+  padding: 5px 0;
+}
+
+.author h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.author li {
+  display: block;
+}
+
+.author ul {
+  /*list-style-type: none;*/
+}
+
+.author > div ul, .author > div li {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* .authorInfo .mktree > li{ */
+/*   width: 100%; */
+/* } */
+
+ul.variations {
+  position: static;
+  float: none;
+}
+
+ul.variations .liBullet .bullet {
+  background: white !important;
+}
+
+ul.variations li {
+  display: block;
+  width: auto;
+  margin-right: 1.5em;
+}
+
+.authorWidget {
+  float: right;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.authorWidget a {
+  outline-width: 0;
+}
+
+h1.profileHead {
+  padding: 14px 0 10px 0;
+  background: url(/mathscinet/images/profile2.png) no-repeat;
+  text-indent: 40px;
+}
+
+.newj dt {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+
+.widen {
+  float: left;
+  margin-right: 1.5em;
+  white-space : nowrap;
+}
+
+.space-line {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+.tab-pieces {
+  margin: 20px 0;
+  width: 100%; 
+}
+
+a.MathJaxToggle:visited {
+  color: #AB3625 !important; 
+}
+
+.inPageTitle {
+  position: relative;
+  display: block;
+}
+
+.MathJaxToggle {
+  zoom: 1; 
+  clear: left;  
+  float: right;
+  cursor: pointer;
+  font-style: normal;
+  font-size: 1em;
+  color: #AB3625;
+  -moz-border-radius-bottomleft:7px;
+  -moz-border-radius-bottomright:7px;
+  -moz-border-radius-topleft:7px;
+  -moz-border-radius-topright:7px;
+  background: #FFFF99;
+  margin: 0 4px 4px 0;
+  display:block;  
+  outline:0;
+  text-decoration:none !important; 
+}
+
+.MathJaxHint {
+  cursor: auto;
+  color: #AB3625; 
+}
+
+dl.roster {
+  margin: .5em -1em;
+  padding: 0;
+}
+
+.roster dt {
+  float: left;
+  clear: left;
+  left: 0;
+  min-width: 3em;
+  margin-right: .4em;
+  text-align: right;
+  font-weight: normal;
+}
+
+.roster dd {
+  margin: 0 0 0 3.4em;
+  padding: 0;
+}
+
+.review {
+  line-height: 1.7em;
+}
+
+.terms_of_use {
+  font-size: 80%;
+}
+
+.terms_of_use .title {
+  font-size: 2em;
+  line-height: normal;
+}
+
+.terms_of_use .emph {
+  font-weight: bold;
+  margin-bottom: 1.5em;
+}
+
+.terms_of_use {
+  line-height: 1.4em;
+}
+
+.terms_of_use ol > li {
+  margin-bottom: 1em;
+}
+
+.terms_of_use ul > li {
+  margin-bottom: .5em;
+  list-style-type: disc; color: #000000
+}
+
+span.bf {
+  font-weight: bold;   
+}
+
+span.it {
+  font-style: italic;
+}
+
+span.em {
+  font-style: italic;
+}
+
+/* safe unicode font */
+tt {
+  font-family: lucida sans unicode, Verdana, "Bitstream Vera Sans", Arial, Helvetica, sans-serif;
+  
+}
+
+.tt {
+  font-family: 'Courier', 'Courier New', 'Lucida Typewriter', 'American Typewriter', 'Bitstream Vera Sans Mono', 'Andale Mono', monospace;
+}
+
+span.tt {
+  font-family: 'Courier', 'Courier New', 'Lucida Typewriter', 'American Typewriter', 'Bitstream Vera Sans Mono', 'Andale Mono', monospace;
+  font-size: 1.1em;
+}
+
+span.small {
+  font-size: smaller;
+}
+
+span.rm {
+  font-weight: normal;     
+}
+
+span.sl {
+  font-family: serif;
+  font-style: italic;
+}
+
+span.sc {
+  font-variant: small-caps;
+}
+
+span.cal {
+  font-family: cursive;
+}
+  
+span.obeylines {
+  white-space: pre;
+}
+
+span.narrower {
+  display: block;
+  margin-left: 2em;
+}
+
+.MirrorSitesForm {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+/* this has an impact on ie layout */
+form {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  /*overflow: auto;*/
+}
+
+.item_status:link,
+.item_status:visited,
+.item_status:active {
+  color: #555;
+  text-decoration: none;
+}
+
+.item_status {
+  display: inline-block;
+  text-align: center;
+  min-width: 6em;
+  padding-top: .2em;
+  padding-bottom: .2em;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  font-size: .7em;
+  background: #dddddd;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#dddddd', endColorstr='#bbbbbb');
+  background: -webkit-gradient(linear, left top, left bottom, from(#dddddd), to(#bbbbbb));
+  background: -moz-linear-gradient(top, #dddddd, #bbbbbb);
+  color: #555 !important;
+/*  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.2); */
+  vertical-align: top;
+  font-weight: bold; 
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -khtml-border-radius: 2px; /* old Konqueror browser */
+  vertical-align: middle;
+  font: Helvetica,arial,freesans,clean,sans-serif !important;
+}
+
+.mrnum:link,
+.mrnum:visited,
+.mrnum:active {
+  color: #333;
+  text-decoration: none;
+}
+
+.headline_labels {
+  display:none;
+}
+
+.instInfo {
+    color: blue;
+}
+
+.instData {
+    display: none;
+    min-width: 40em;
+    white-space: pre;
+}
+
+.headline_dates {
+  display: none;  
+  min-width: 20em;
+/*  background-color: #F2F2F2;  */
+}
+
+.greenStatus {
+    color: green !important;
+    font-weight: bold;
+}
+.redStatus {
+    color: red !important;
+    font-weight: bold;
+}
+
+.status {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  padding-left: .5em;
+  padding-right: .5em;
+  padding-top:.2em;
+  padding-bottom:.2em;
+}
+
+.date {
+  display: inline-block;  
+/*  color: #673398; *//*Purple*/
+  color: #333; 
+  font-size: 1em;
+  font-weight: bold;
+  padding-left: .5em;
+  padding-right: .5em;
+  padding-top:.2em;
+  padding-bottom:.2em;
+}
+.date_label {
+  display: block;
+  font-size: .8em;
+  font-weight: bold;
+  color: #555;
+  padding-right: .5em;
+  padding-left: .5em;
+  padding-top: .2em;
+  padding-bottom: .2em;
+  background-color: #dddddd;    
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#dddddd', endColorstr='#bbbbbb');
+  background: -webkit-gradient(linear, left top, left bottom, from(#dddddd), to(#bbbbbb));
+  background: -moz-linear-gradient(top, #dddddd, #bbbbbb);
+}
+
+.mrnum {
+  display: inline-block;
+  text-align: center;
+  min-width: 5em;
+  /*background-color: #F2F2F2;*/
+  /* font-weight: bold; */
+  padding-top: 0em;
+  padding-bottom: 0em;
+/*  padding-left: 0.5em;
+  padding-right: 0.5em;*/
+  font-size: .85em;
+  color: #333;
+  /*
+  border: 1px solid #333;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  -khtml-border-radius: 7px; *//* old Konqueror browser */
+}
+
+.mrnum:hover {
+  background-color: #CCC;
+  color: black;
+/*  border: 1px solid black;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;*/
+}
+
+.socialLinks {
+  float: none !important;
+  /* update the following dimensions if the social links image changes */
+  /*width: 420px;*/
+  height: 52px;
+  margin: 0 auto 50px auto;
+  text-align: center;
+
+}
+.socialLinks a {
+  display: inline-block;
+  margin: 6px 3px;
+}
+
+.socOuter {
+  clear: both;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#mobileaccess { 
+  float: right;
+  padding-left: 15px;
+  text-align: right;
+}
+
+#pairingdaysleft {
+  border: thin solid #ccc;
+  padding: 3px;
+  letter-spacing: 2px;
+  color: gray;
+  margin-left: 2ex;
+  position: relative;
+  top: 1.1em;
+  font-size: 1.2em;
+  -moz-box-shadow: 4px 4x 5px #ccc;
+  -webkit-box-shadow: 4px 4px 5px #ccc;
+  box-shadow: 4px 4px 5px #ccc;
+  font-weight: 500;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* New stuff */
+
+#profile-pic  {
+  float: left;
+  margin: 0 20px 0 0;
+  max-width: 250px;
+}
+
+#profile-pic img {
+  width: 100%;
+  overflow: hidden;
+}
+
+#profile-pic:hover .image-hover {
+  opacity: 1;
+
+}
+
+.image-hover {
+  background: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  opacity: 0;
+  padding: 125px 0;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 250px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.edit-profile-pic  {
+  float: left;
+  margin: 0px 50px 20px 0;
+}
+
+.edit-profile-pic img {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.edit-profile-content {
+  display: inline-block;
+}
+
+#profile-edit {
+  margin-top: 20px;
+}
+
+.panel {
+  margin: 0 0 20px 0;
+}
+
+#profile-fields {
+  margin: 25px 0;
+}
+
+#profile-fields input {
+  width: 265px !important;
+}
+
+#profile-fields .error {
+  color: red;
+}
+
+.well {
+  padding: 20px;
+}
+
+#profile-admin {
+        position: absolute;
+  right: 0;
+  margin: 20px 20px 15px 0;
+  z-index: 2000;
+}
+
+.author {
+  position: relative;
+  padding: 20px 0 40px 0;
+  overflow: hidden;
+}
+
+.authorInfo {
+  margin: 0 0 0 300px;
+}
+
+.authorInfo table {
+  width: auto;
+  margin: 20px 0;
+}
+
+.authorInfo table td {
+  padding: 4px 10px 4px 0;
+}
+
+.authorInfo table td:nth-child(even) {
+  font-weight: bold;
+  max-width: 500px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;  
+}
+
+.authorInfo table td:nth-child(even) a {
+  font-weight: normal;
+}
+
+#upload-picture, #delete-picture {
+  position: relative;
+  width: 125px;
+  overflow: hidden;
+}
+
+input[type="file"] {
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.help-inline {
+  vertical-align: top;
+  margin: 7px 0 0 5px;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.twbs .help-inline {
+  margin: 0 0 10px 10px;
+}
+
+/* Search Results */
+
+.authors {
+  margin: 20px 0;
+}
+
+.authors ul {
+  padding: 0;
+  margin: 0;
+}
+
+.authors li {
+  display: inline;
+}
+
+.authors li:after {
+  content: ' | ';
+}
+
+.authors li:last-child:after {
+  content: none;
+}
+
+.authorList {
+  border-bottom: 1px solid #eee;
+  position: relative;
+  padding: 10px 0 20px 0;
+  overflow: hidden;
+}
+
+.authorList .titleInfo {
+  margin: 10px 0 0 0;
+}
+
+.authorList .title {
+  display: inline-block;
+  margin-left: 10%;
+  width: 75%;
+}
+
+.authorList .year {
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+  width: 14%;
+}
+
+.authorList:last-child {
+  border: none;
+}
+
+.SearchBox {
+    /*font-size: 1.2em !important;*/
+  margin: 40px 100px 20px 0;
+  /*text-align: left;*/
+  /*width: calc(100% - 120px);*/
+}
+
+.SearchButton {
+    margin-top: .5em !important;
+    font-size: 1.2em !important;
+}
+
+.titleInfo .title {
+    font-size:1.2em;
+    line-height: 1.2em;
+}
+
+.titleInfo .year {
+    font-weight: bold;
+    font-size:1.2em;
+}
+
+#search-fields {
+  /*text-align: center;*/
+}
+
+#search-fields .title {
+  /*font-weight: normal;*/
+}
+
+#search-fields .description {
+  color: #999;
+}
+
+#search-fields .search {
+  color: #fff;
+  display: inline-block;
+  font-size: 24px;
+}
+
+#search-fields .error {
+  color: #C00;
+  margin: 25px 0;
+}
+
+.searching {
+  color: #BEBEBE !important;
+}
+
+.keywordSearch {
+  text-align: center;
+}
+
+
+#search-fields input {
+  border: none;
+  border-bottom: 1px solid #bbb;
+  display: inline-block;
+  font-size: 24px !important;
+  padding: 5px 5px;
+  width: 400px !important;
+}
+
+#search-fields input:focus {
+  outline: 0;
+}
+
+#search-fields .info {
+  margin: 20px 0;
+}
+
+.possible {
+  margin: 40px 0 0 0;
+}
+
+#authorCitationsBlock form, #citationsBlock form, .citationsTitle, #top10List h2 {
+  margin-top: 10px;
+}
+
+#subj_top_articles {
+  width: 340px;
+}
+
+.mobile {
+  background: #FDE1BE;
+  display: none;
+  font-size: 12px;
+  padding: 7px 0;
+  text-align: center;
+}
+
+.mobile a {
+  color: #f17400;
+}
+
+.mobile span {
+  color: #f17400;
+}
+
+@media all and (max-width: 1050px) {
+
+  .authorInfo table td:nth-child(even) {
+    max-width: 350px;
+   }
+}
+
+@media all and (max-width: 950px) {
+
+  .help-inline {
+    margin: -5px 0px 12px 5px;
+  }
+
+  .searchTerm input[type='text'], .searchTerm div {
+    width: calc(100% - 300px);
+  }
+}
+
+@media all and (max-width: 900px) {
+
+  .authorInfo table td:nth-child(even) {
+    max-width: 200px;
+   }
+}
+
+@media all and (max-width: 855px) {
+
+  select.publicationsFields {
+    width: 10em;
+  }
+
+  .searchTerm input[type='text'], .searchTerm div {
+    width: calc(100% - 230px);
+  }
+
+/*  .searchTerm input[type='text'], .searchTerm div {
+    width: calc(100% - 280px);
+  }*/
+
+  #logocontainer {
+    padding-top: 10px;
+  }
+
+  #menuWrap {
+    /*margin-top: -30px !important;*/
+  }
+
+  ul.tabContainer {
+    top: 136px;
+  }
+
+  .folder, .topFolder, .bottomFolder {
+    top: 180px;
+  }
+
+  .SearchBox {
+    margin: 40px 100px 20px 0;
+  }
+
+  #search-fields input {
+    width: 350px !important;
+  }
+}
+
+@media all and (max-width: 821px) {
+
+  #authorCitationsBlock form, #citationsBlock form, .citationsTitle, #top10List h2 {
+    margin-top: 50px;
+  }
+}
+
+@media all and (max-width: 770px) {
+
+  .SearchBox {
+    margin: 40px 0 20px 0;
+  }
+
+  #search-fields .search {
+    display: none;
+  }
+
+  #search-fields input {
+    width: 350px !important;
+  }
+}
+
+@media all and (max-width: 720px) {
+
+  .authorInfo table td:nth-child(even) {
+    max-width: 200px;
+   }
+
+  .edit-profile-pic  {
+    float: none;
+    margin: 0 0 20px 0;
+  }
+
+  .cropFrame {
+    margin: 0 auto;
+  }
+
+  .edit-profile-content {
+    text-align: center;
+  }
+
+  .twbs .help-inline {
+    display: block;
+    margin: 0 0 20px 0;
+  } 
+
+  .panel {
+    text-align: center;
+  }
+
+  #everything {
+    width: 90%;
+  }
+
+  #profile-pic {
+    float: none;
+    margin: 0 auto 25px auto;
+    text-align: center;
+  }
+
+  .authorInfo {
+    margin: 0;
+  }
+
+  .authorName {
+    display: block;
+  }
+
+  #profile-admin .btn {
+    padding: 0 6px;
+    font-size: 10.5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+
+  .amsAddress {
+    /*margin: 0 auto 20px auto !important;*/
+  }
+
+  .socOuter {
+
+  }
+
+	#announcement {
+		display: none;
+	}
+
+	.factsAndFigures, ul.help {
+		/*bottom: 175px;*/
+	}
+
+  .authorList .title {
+    margin: 0;
+  }
+
+  .authorList .year {
+    width: 23%;
+  }
+
+  .column {
+    float: none;
+    padding: 0;
+    width: auto;
+  }
+}
+
+
+@media all and (max-width: 650px) {
+
+  #searchMSCBlock .folderContent, #collaborationDistBlock .folderContent, #currentJournalsBlock .folderContent, #currentPubBlock .folderContent {
+    padding-top: 3em;
+  }
+}
+
+
+@media all and (max-width: 600px) {
+
+  .instname span.inst {
+    display: none;
+  }
+}
+
+@media all and (max-width: 570px) {
+
+  .searchTerm select[name='sk'], .searchTerm input[name='sk'] {
+    margin: 10px 0;
+    width: 98%;
+  }
+}
+
+@media all and (max-width: 500px) {
+
+  .box {
+    float: none;
+    margin: 0 0 20px 0 !important;
+    width: 100%;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  #mobileaccess {
+    display: none;
+  }
+
+  .factsAndFigures {
+    display: none;
+  }
+
+  .amsAddress {
+    margin: 0 auto !important;
+    text-align: center;
+    width: 100%;
+  }
+
+  .amsAddress img {
+    float: none;
+  }
+
+  #menuWrap {
+    background: #EEEEFD;
+    float: none;
+    height: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  html>body ul#menu {
+    padding: 0 5px;
+  }
+
+  ul#menu {
+    background: none;
+    height: auto;
+    width: 450px;
+  }
+
+  ul#menu li {
+    padding: 0;
+  }
+
+  ul#menu li a, ul#menu li strong {
+    display: inline-block;
+    padding: 7px 0 7px 5px;
+  }
+
+  #search-fields input {
+    font-size: 21px !important;
+    width: calc(100% - 100px) !important;
+  }
+
+  #search-fields input.full {
+    margin: 10px 0 0 0;
+    width: 95% !important;
+  }
+
+  .authorList .title {
+    font-size: 18px;
+  }
+
+  .possible {
+    text-align: center;
+  }
+
+  #logocontainer {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 450px) {
+
+  #publications {
+    margin-top: 20px;
+  }
+
+  select.publicationsFields {
+    width: 95%;
+  }
+
+  .searchTerm input, input#AuthorSourceName, input#AuthorTargetName {
+    margin: 5px 0;
+    width: 98%;
+  }
+
+  .searchTerm select[name='MRprimary'] {
+    margin: 0;
+    width: 100%;
+  }
+
+  #publications input[type='text'] {
+    width: calc(100% - 80px);
+  }
+
+  form[name="pubsearch"] select {
+    margin: 3px 0;
+  }
+
+  .searchTerm input[type='text'], .searchTerm div {
+    width: 95%;
+  }
+
+  select.boolean {
+    height: 23px;
+    margin: 5px 0 20px 10px;
+  }
+
+/*  select.boolean:last-child {
+    margin-bottom: 0;
+  }*/
+
+  #logocontainer {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  ul.tabContainer {
+    top: 156px;
+  }
+
+/*  ul.tabContainer li:nth-child(4) {
+    margin-left: 14px;
+  }*/
+
+  .topFolder {
+    top: 210px;
+  }
+
+  .folderContent {
+    padding: 2.5em 2.5em 1.6em 2.5em;
+  }
+
+  #subj_top_articles {
+    width: 100%;
+  }
+}
+
+/*@media all and (max-width: 440px) {
+
+  #menuWrap ul li:nth-child(6) {
+    display: none;
+  }
+}*/
+
+@media all and (max-width: 400px) {
+
+  .searchOptions {
+    margin-top: 20px;
+  }
+
+  .copyright {
+    margin: 0 15px 40px;
+  }
+
+  .copyright select {
+    width: 98%;
+  }
+
+  .folderContent {
+    padding: 2.5em 2em 1.6em 2em
+  }
+
+  #search-fields .header {
+    font-size: 21px;
+    line-height: normal;
+  }
+}
+
+@media all and (max-width: 360px) {
+  #searchMSCBlock .folderContent, #collaborationDistBlock .folderContent, #currentJournalsBlock .folderContent, #currentPubBlock .folderContent {
+    padding-top: 5em;
+  }
+}
+
+@media all and (max-width: 355px) {
+
+  /*#menuWrap ul li:nth-child(4) {
+    display: none;
+  }*/
+
+  .authorInfo table {
+    margin: 20px auto;
+  }
+
+  .authorInfo table td {
+    display: block !important;
+  }
+
+  .authorList .title {
+    width: 100%;
+  }
+
+  .authorList .year {
+    width: 100%;
+  }
+
+  .instname {
+    display: none;
+  }
+}
+
+@media all and (max-width: 332px) {
+
+  #authorCitationsBlock form, #citationsBlock form, .citationsTitle, #top10List h2 {
+    margin-top: 100px;
+  }
+
+  /*ul.tabContainer li {
+    margin: 0 !important;
+  }
+
+  ul.tabContainer li:nth-child(3) {
+    margin-left: 14px !important;
+  }*/
+
+  #collaborationDistBlock .folderContent {
+    padding-top: 8em;
+  }
+}
+
+@media all and (max-width: 325px) {
+  #searchMSCBlock .folderContent, #collaborationDistBlock .folderContent, #currentJournalsBlock .folderContent, #currentPubBlock .folderContent {
+    padding-top: 7em;
+  }
+
+  ul.help {
+    font-size: 12px;
+  }
+
+  ul.help li {
+    padding: 0 4px 0 8px;
+  }
+}
+
+@media all and (max-width: 287px) {
+
+  #authorCitationsBlock form, #citationsBlock form, .citationsTitle, #top10List h2 {
+    margin-top: 130px;
+  }
+}
+/*
+@media all and (max-width: 235px) {
+
+  ul.tabContainer li {
+    margin: 0 !important;
+  }
+
+  ul.tabContainer li:nth-child(even) {
+    margin-left: 14px !important;
+  }
+
+  .folderContent {
+    padding-top: 120px;
+  }
+}*/
+
+.hide {
+    display: none;
+}
+
+.msc2020 {
+    float:left;
+    margin-top: 2px;
+    margin-left: 2em;
+    margin-right: 2em;
+    background-color: #fee2bf;
+    padding: .5em;
+    border: 1px solid #ae8d69;
+    border-radius: 25px;
+/*    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;*/
+}
+
+.covid19 {
+    float:left;
+    margin-top: .75em;
+    margin-left: 2em;
+    margin-right: 2em;
+    background-color: #fee2bf;
+    padding: .5em;
+    border: 1px solid #ae8d69;
+    border-radius: 25px;
+/*    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;*/
+}
+
+/* Aggregations */
+
+.agg-body {
+    /* display: none; */
+    overflow-y:auto;
+    max-height: 15em;
+}
+
+ul.agg-box-list {
+    list-style: none;
+}
+
+.agg-box-list>li {
+    position: relative;
+}
+
+.agg-box-label {
+    display: block;
+    padding: 4px 36px 4px 0;
+}
+
+.agg-box-label .agg-form-checkbox {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.agg-form-checkbox {
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+    padding-left: 22px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.agg-form-checkbox 
+input[type=checkbox] {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    opacity: 0; 
+    filter: alpha(opacity=0);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.aggs {
+    width: 180px;
+    font-size: .85em;
+    font-family: "Trebuchet MS", "Bitstream Vera Sans", "Lucida Grande", "Nimbus Sans L", Verdana, Arial, Helvetica, sans-serif;
+}
+
+.left-nav > div > dl > dt {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.form-checkbox-title:before,
+.form-radiobox-title:before {
+    z-index: 2;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border: 1px solid #D9D9D9;
+    background: #fff;
+}
+
+.form-checkbox-title:after,
+.form-checkbox-title:before,
+.form-radiobox-title:after,
+.form-radiobox-title:before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+}
+
+.form-checkbox-title:after,
+.form-radiobox-title:after {
+    z-index: 3;
+    text-rendering: auto;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.agg-form-checkbox input[type=checkbox]:checked + .form-checkbox-title:after {
+/*    content: "\f00c"; */
+
+    top: 3px;
+    left: 6px;
+    width: 3px;
+    height: 8px;
+    transform: rotate(45deg);
+    border: solid #06f;
+    border-width: 0 2px 2px 0;
+}
+
+.agg-form-checkbox:hover,
+.agg-form-radiobox:hover {
+    color: #06f;
+}
+
+.agg-box-num {
+    position: absolute;
+    top: .4em;
+    right: 0;
+    color: #707070;
+    font-size: .85em;
+}
+
+.aggs ul,dd {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: normal;
+    font-family: inherit;
+    text-decoration: none;
+    -webkit-text-size-adjust: none;
+    -ms-interpolation-mode: bicubic;
+}
+
+input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.agg-form-checkbox, .agg-form-radiobox {
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+    padding-left: 22px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.row:after,
+.row:before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row.has-side-left>.row-side {
+    display: block;
+    float: left;
+    width: 190px;
+}
+
+.row.has-side-left>.row-body {
+    margin-left: 190px;
+}
+
+.row-body-inner {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.left-nav {
+    margin-right: -1px;
+    padding-right: 20px;
+    border-right: 1px solid #eee;
+}
+
+.row.has-side-left .row-body-border {
+    padding-left: 20px;
+    border-left: 1px solid #eee;
+}
+
+.sortby {
+    font-weight: bold;
+}
+
+.sortbox {
+    border-bottom: 3px solid black;
+    padding-bottom:1em;
+    padding-top: 1em;
+}
+.searchin {
+    border-bottom: 3px solid black;  /* #ab3625 */
+    padding-bottom:1em;
+    padding-top: 1em;
+}
+.searchagg {
+    background-color: #eee;
+}
+.searchin > span {
+    font-weight:bold;
+}
+
+.extraRelated {
+    background-color: aliceblue;
+}
+
+.donotref {
+    background-color: tomato;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.groupCitation {
+    border: 2px solid black;
+    padding: 3px;
+    margin: 3px;
+}
+
+.multcits {
+    color: black;
+    font-style: italic;
+}
+
+.refGroupNote {
+    color: black;
+    font-style: italic;
+    margin: 2em;
+}
+
+.extraMargin {
+    margin-top: 10px;
+}
+
+.errataHR {
+    border: 3px solid #E0E4E6 !important;
+    clear: both;
+    height: 0px;
+    background-color: #E0E4E6;
+    margin-bottom: 3em;
+}
+
+.errata {
+    background-color: #E0E4E6;
+    margin-top: .5em;
+    padding: .5em;
+    width: fit-content;
+    width: -moz-fit-content;
+    border-radius: 5px;
+    /* border-bottom: 2px solid #E87722; */
+}
+
+.errata a {
+    /* text-decoration: underline; */
+}

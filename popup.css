@@ -1,0 +1,55 @@
+/*
+* @Author:             old jia
+* @Email:              jiaminxin@outlook.com
+* @Date:               2021-06-04 21:12:23
+* @Last Modified by:   old jia
+* @Last Modified time: 2019-05-28 18:36:17
+*/
+#panel {
+	width: 300px; 
+	min-height: 150px;
+	text-align: center;
+}
+#title {
+	font-size: 15px;
+	font-weight: 700;
+	text-align: center;
+}
+
+input {
+	width: 200px;
+    height: 30px;
+    border: 2px solid gray;
+    border-radius: 22px;
+    outline: none;
+    text-align: center;
+    background-color: white;
+    margin: 10px;
+}
+
+input#references-info {
+	margin-top: 20px;
+}
+
+input#download-paper {
+	margin-bottom: 40px;
+}
+
+input:hover {
+	border: 2px solid blue;
+    transition: border 0.5s;
+}
+
+input:active {
+	border: 2px solid red;
+	box-shadow: 0 0 3px red;
+    transition: box-shadow 0.1s;
+}
+
+#footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 10px;
+	text-align: center;
+}

@@ -1,0 +1,52 @@
+/*
+* @Author:             old jia
+* @Email:              jiaminxin@outlook.com
+* @Date:               2021-05-29 12:31:17
+* @Last Modified by:   old jia
+* @Last Modified time: 2019-05-28 18:36:17
+*/
+
+#menu {
+	position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(50% - 80px);
+    bottom: 50%;
+}
+#menu input {
+	width: 400px;
+    height: 40px;
+    border: 2px solid gray;
+    border-radius: 22px;
+    outline: none;
+    text-align: center;
+}
+
+
+#menu input#title:hover, #menu input#title:focus {
+	border: 2px solid blue;
+    transition: border 0.5s;
+}
+
+#menu input#search:hover {
+	border: 2px solid blue;
+    transition: border 0.5s;
+}
+
+#menu input#search:active {
+	border: 2px solid red;
+	box-shadow: 0 0 5px red;
+    transition: box-shadow 0.1s;
+}
+
+.record {
+    min-height: 150px;
+    border-top: 1px solid gray;
+}
+
+.doc .mytitle {
+    font-size: 25px;
+}
+.doc .record {
+    margin-bottom: 20px;
+}

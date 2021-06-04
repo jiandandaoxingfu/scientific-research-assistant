@@ -1,1 +1,1 @@
-# scientific-research-assistant
+一个支持论文批量下载的浏览器插件。
