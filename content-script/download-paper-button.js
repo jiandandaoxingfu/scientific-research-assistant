@@ -1,24 +1,3 @@
-var source_url = "https://sci-hub.ren/";
-var check_source_url_count = 0;
-
-function get_source_url() {
-	if( check_source_url_count > 4 ) return;
-	check_source_url_count += 1;
-	let release_url = 'https://api.github.com/repos/jiandandaoxingfu/sci-hub-paper-download/releases';
-		axios.get(release_url).then( (res) => {
-			if( res.data[0] ) {
-				source_url = res.data[0].name;
-				console.log(source_url);
-			}
-		}).catch( e => {
-			console.log( '查询更新失败：' + e );
-			setTimeout( () => {
-				get_source_url();
-			}, 1000);
-		})
-}
-get_source_url();
-
 let doi_;
 let text;
 let is_start = true;
