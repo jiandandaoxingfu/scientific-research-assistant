@@ -6,7 +6,7 @@
 * @Last Modified time: 2021-06-06 09:50:47
 */
 
-var lastest_version = 'v1.0.0';
+var lastest_version = 'v1.1';
 var check_update_count = 0;
 
 function check_update() {
