@@ -33,7 +33,8 @@
           "https://*/*"],
     	"js": [
           "pages/commonJs/axios.min.js",
-        	"content-script/download-paper-button.js"],
+        	"content-script/download-paper-button.js",
+          "content-script/arxiv.js"],
     	"run_at": "document_end"
   	}
   ]
