@@ -26,6 +26,7 @@ class App {
 			div.setAttribute('id', `record-${i + 1}`);
 			div.setAttribute('class', `record`);
 			div.innerHTML = `
+				<input type="checkbox" />
 				<div class="title mytitle">
 					<span>${i + 1}:  ${this.title_arr[i]}<span/>
 				</div>
