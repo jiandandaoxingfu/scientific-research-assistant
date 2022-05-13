@@ -1,4 +1,5 @@
-A chrome extension helps 
-  1. Download papers from sci-hub by doi.
-  2. Provide download button in journals website of papers (Such as baiduxueshu, springer, elsevier).
-  3. Query papers information from MathReview by title.
+基于Chrome浏览器内核的插件, 适用于Edge等浏览器.
+
+## 功能
+  - 后台自动识别doi链接, 在其附近添加下载按钮. 如果当前页面有多个doi链接, 则提供全部下载按钮. (从sci-hub下载)
+  - 根据论文标题查询MathSci信息, 用于比对参考文献信息.
