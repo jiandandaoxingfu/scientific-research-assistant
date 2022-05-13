@@ -2,11 +2,11 @@
 * @Author:             old jia
 * @Email:              jiaminxin@outlook.com
 * @Date:               2021-06-04 21:28:13
-* @Last Modified by:   Administrator
-* @Last Modified time: 2021-06-13 11:23:02
+* @Last Modified by:   old jia
+* @Last Modified time: 2022-05-13 15:09:10
 */
 
-var lastest_version = 'v1.1';
+var lastest_version = 'v2.0.0';
 var check_update_count = 0;
 
 function check_update() {
@@ -29,7 +29,7 @@ function check_update() {
 		setTimeout( () => {
 			check_update();
 		}, 5000);
-	} )
+	})
 }
 
 check_update();

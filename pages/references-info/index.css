@@ -47,16 +47,6 @@
 .doc .mytitle {
     font-size: 25px;
 }
-
 .doc .record {
     margin-bottom: 20px;
-}
-
-
-.record input {
-    height: 25px;
-    width: 25px;
-    display: block;
-    position: absolute;
-    left: -30px;
 }
