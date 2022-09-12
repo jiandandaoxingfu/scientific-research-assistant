@@ -16,6 +16,42 @@ let release_url = 'https://api.github.com/repos/jiandandaoxingfu/scientific-rese
 	})
 })();
 
+(function() {
+	let css = `
+	    a.a-download-paper-by-doi, a.a-download-paper-by-doifailed {
+	    	background-color: red; 
+	    	color: white; 
+	    	padding: 2px 15px; 
+	    	border-radius: 5px; 
+	    	font-size: 20px;
+	    }
+	    #a-download-all {
+	    	position: fixed;
+    	    top: 25%;
+    	    right: 0;
+    	    background-color: red;
+    	    color: white;
+    	    padding: 2px 15px;
+    	    border-radius: 5px;
+    	    font-size: 20px;
+    	    z-index: 999999;
+    	    width: 150px;
+    	    border: none;
+	    }
+		#a-download-all:hover, a.a-download-paper-by-doi:hover {
+			background-color: blue;
+			transition: background-color 0.5s;
+		}
+        #a-download-all:active, a.a-download-paper-by-doi:active {
+			background-color: yellow;
+			transition: background-color 0.5s;
+		}
+	`
+	let style = document.createElement('style');
+	style.innerHTML = css;
+	document.head.appendChild(style);
+})()
+
 function add_download_button() {
 	if( window.location.href !== old_url ) {
 		old_url = window.location.href;
@@ -48,7 +84,6 @@ function add_download_button() {
     	download_btn.setAttribute('target', '_blank');
     	download_btn.href = sci_hub_url + a.getAttribute('doi');
     	download_btn.innerText = '下载';
-    	download_btn.style = "background: red; color: white; padding: 2px 15px; border-radius: 5px; font-size: 20px; height: "
     	a.parentNode.insertBefore(download_btn, a);
 	})
 }
@@ -59,19 +94,6 @@ function add_download_all_button() {
 	download_all_btn.type = 'button';
 	download_all_btn.id = 'a-download-all';
     download_all_btn.value = '下载全部(0)';
-    download_all_btn.style = `
-    	position: fixed;
-    	top: 25%;
-    	right: 0;
-    	background: red;
-    	color: white;
-    	padding: 2px 15px;
-    	border-radius: 5px;
-    	font-size: 20px;
-    	z-index: 999999;
-    	width: 150px;
-    	border: none;
-    `
     document.body.appendChild(download_all_btn)
     download_all_btn.onclick = () => {
     	message.send('download-all', { doi_list: JSON.stringify([...doi_list.values()]) });
