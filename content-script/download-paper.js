@@ -20,21 +20,22 @@ let release_url = 'https://api.github.com/repos/jiandandaoxingfu/scientific-rese
 	let css = `
 	    a.a-download-paper-by-doi, a.a-download-paper-by-doifailed {
 	    	background-color: red; 
-	    	color: white; 
+	    	color: white !important; 
 	    	padding: 2px 15px; 
 	    	border-radius: 5px; 
 	    	font-size: 20px;
+	    	z-index: 999999 !important;
 	    }
 	    #a-download-all {
 	    	position: fixed;
     	    top: 25%;
     	    right: 0;
     	    background-color: red;
-    	    color: white;
+    	    color: white !important;
     	    padding: 2px 15px;
     	    border-radius: 5px;
     	    font-size: 20px;
-    	    z-index: 999999;
+    	    z-index: 999999 !important;
     	    width: 150px;
     	    border: none;
 	    }
