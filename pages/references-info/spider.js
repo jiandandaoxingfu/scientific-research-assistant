@@ -7,8 +7,8 @@ class Spider {
 		this.search_states = new Array(n).join(',').split(',').map( e => 0 ); // search: -1/0/1/2， error/undo/doing/done;
 		this.search_results = new Array(n).join(',').split(',');
 		this.search_urls = new Array(n).join(',').split(',');
-		// this.search_url = `https://mathscinet.ams.org/mathscinet/search/publdoc.html?arg3=&co4=AND&co5=AND&co6=AND&co7=AND&dr=all&pg4=AUCN&pg5=TI&pg6=PC&pg7=ALLF&pg8=ET&r=1&review_format=html&s4=&s5=title&s6=&s7=&s8=All&sort=Newest&vfpref=html&yearRangeFirst=&yearRangeSecond=&yrop=eq`; // title
-		this.search_url = `https://mathscinet.ams.org/mathscinet/search/publications.html?pg4=AUCN&s4=&co4=AND&pg5=TI&s5=title&co5=AND&pg6=PC&s6=&co6=AND&pg7=ALLF&s7=&co7=AND&dr=all&yrop=eq&arg3=&yearRangeFirst=&yearRangeSecond=&pg8=ET&s8=All&review_format=html&Submit=%E6%90%9C%E7%B4%A2`; // title
+		this.search_url = `http://mathscinet.ams.org.zzulib.vpn358.com/mathscinet/search/publdoc.html?arg3=&co4=AND&co5=AND&co6=AND&co7=AND&dr=all&pg4=AUCN&pg5=TI&pg6=PC&pg7=ALLF&pg8=ET&r=1&review_format=html&s4=&s5=title&s6=&s7=&s8=All&sort=Newest&vfpref=html&yearRangeFirst=&yearRangeSecond=&yrop=eq`; // title
+		// this.search_url = `https://mathscinet.ams.org.zzulib.vpn358.com/mathscinet/search/publications.html?pg4=AUCN&s4=&co4=AND&pg5=TI&s5=title&co5=AND&pg6=PC&s6=&co6=AND&pg7=ALLF&s7=&co7=AND&dr=all&yrop=eq&arg3=&yearRangeFirst=&yearRangeSecond=&pg8=ET&s8=All&review_format=html&Submit=%E6%90%9C%E7%B4%A2`; // title
 		console.log('已初始化' + new Date().getMinutes() + ':' + new Date().getSeconds() );
 	}
 
